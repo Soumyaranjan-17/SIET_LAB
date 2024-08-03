@@ -11,3 +11,6 @@ lets check again
 what the f**k
 
 git config --get-all user.name
+
+
+photo not changed so i changed it in google
