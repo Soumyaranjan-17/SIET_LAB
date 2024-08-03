@@ -6,3 +6,8 @@ lets again
 mailto:128879861+Soumyaranjan-17@users.noreply.github.com
 
 lets check again
+
+
+what the f**k
+
+git config --get-all user.name
