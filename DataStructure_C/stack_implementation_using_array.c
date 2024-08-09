@@ -5,6 +5,8 @@
 
 struct stack {
     int info;
+
+    
 };
 
 
