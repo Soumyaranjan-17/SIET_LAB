@@ -2,7 +2,6 @@
 //Write a program to create a bank account having following data members and member method. 
 
 
-import java.io.*;
 import java.util.Scanner;
 
 class Bank {
@@ -16,6 +15,7 @@ class Bank {
         customerName = sc.nextLine();
         System.out.println("Enter Account Number:");
         accountNo = sc.nextLong();
+        sc.close();
     }
 
     long deposit() {
@@ -23,6 +23,7 @@ class Bank {
         System.out.println("Enter deposit amount:");
         long depositAmount = sc.nextLong();
         balance += depositAmount;
+        sc.close();
         return balance;
     }
 
@@ -36,6 +37,7 @@ class Bank {
         } else {
             System.out.println("Insufficient balance. Withdrawal failed.");
         }
+        sc.close();
     }
 
     void display() {

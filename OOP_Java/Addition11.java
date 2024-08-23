@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 class Addition11{
     public static double Additions(double p, double q){
        return (p+q);
@@ -12,5 +11,6 @@ class Addition11{
         double b = sc.nextDouble();   
         double r = Additions(a, b);
         System.out.println(r);
+        sc.close();
     }
 }

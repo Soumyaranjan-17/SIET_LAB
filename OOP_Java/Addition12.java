@@ -9,6 +9,8 @@ class Addition12{
         a = sc.nextDouble();
         System.out.println("Enter the second number");
         b = sc.nextDouble();
+
+        sc.close();
     }
 
     double process(){
