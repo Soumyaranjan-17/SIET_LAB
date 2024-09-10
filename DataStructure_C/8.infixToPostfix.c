@@ -49,6 +49,7 @@ char pop()
 
 void main()
 {
+    int top = -1;
     char exp[20];
     char *e, x;
 

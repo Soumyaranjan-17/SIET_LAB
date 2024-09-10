@@ -1,34 +1,32 @@
-
-//Write a program to create a bank account having following data members and member method. 
-
-
 import java.util.Scanner;
 
 class Bank {
     String customerName;
     long accountNo;
-    long balance;
+    long balance = 0; // Initialize balance to 0
 
+    private static final Scanner sc = new Scanner(System.in); // Single Scanner instance
+
+    // Method to create an account
     void create() {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Enter the name:");
         customerName = sc.nextLine();
         System.out.println("Enter Account Number:");
         accountNo = sc.nextLong();
-        sc.close();
+        // Clear the newline character left by nextLong()
+        sc.nextLine(); 
     }
 
+    // Method to deposit money into the account
     long deposit() {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Enter deposit amount:");
         long depositAmount = sc.nextLong();
         balance += depositAmount;
-        sc.close();
         return balance;
     }
 
+    // Method to withdraw money from the account
     void withdraw() {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Enter withdraw amount:");
         long withdrawAmount = sc.nextLong();
         if (withdrawAmount <= balance) {
@@ -37,9 +35,9 @@ class Bank {
         } else {
             System.out.println("Insufficient balance. Withdrawal failed.");
         }
-        sc.close();
     }
 
+    // Method to display account details
     void display() {
         System.out.println("Customer Name: " + customerName);
         System.out.println("Account Number: " + accountNo);
