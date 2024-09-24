@@ -1,4 +1,6 @@
 nums = [n for n in range(21)]
+# It is same as
+# nums = [1,2,3,.....19,20]
 
 def isPRIME(n):
     if n < 2:
