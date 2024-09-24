@@ -1,3 +1,6 @@
+# WAP to create a dictionary containing roll no as key and percentage of mark. Filter the roll numbers of those student achive more than 70, 80, 90 percentage.
+
+
 marks = {
     1: 73,
     2: 51,
@@ -46,3 +49,12 @@ print("Above 90: ")
 print(B)
 print("Above 90: ")
 print(C)
+
+# OUTPUT
+
+# Above 90: 
+# [6, 7]
+# Above 90: 
+# [6, 7]
+# Above 90: 
+# [1, 3, 6, 7, 17]
