@@ -21,4 +21,28 @@ marks = {
     20: 13
 }
 
-def AGrade()
+def AGrade(roll):
+    if (marks[roll] > 90):
+        return True
+    return False
+
+def BGrade(roll):
+    if (marks[roll] > 80):
+        return True
+    return False
+
+def CGrade(roll):
+    if (marks[roll] > 70):
+        return True
+    return False
+
+A = list(filter(AGrade, marks))
+B = list(filter(BGrade, marks))
+C = list(filter(CGrade, marks))
+
+print("Above 90: ")
+print(A)
+print("Above 90: ")
+print(B)
+print("Above 90: ")
+print(C)
