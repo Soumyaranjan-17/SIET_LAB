@@ -1,45 +1,41 @@
+// WAP to implement single inheritance on classes initializing on constructor
+
 import java.util.Scanner;
 
-// Father class
 class Father {
     String Fname;
     int age;
 
     // Constructor to initialize Father's details
-    Father(String fname, int age) {
+    public Father(String fname, int age) {
         this.Fname = fname;
         this.age = age;
     }
 
-    // Method to display Father's details
+    // Method to display father's details
     void display() {
         System.out.println("Father's name = " + Fname + ", Father's age = " + age);
     }
 }
 
-// Son class inheriting from Father
 class Son extends Father {
     String Sname;
     int Sage;
 
-    // Constructor to initialize both Father and Son's details
-    Son(String fname, int fage, String sname, int sage) {
-        // Call Father class constructor to initialize Father's details
-        super(fname, fage);
+    // Constructor to initialize both Father's and Son's details
+    public Son(String fname, int fage, String sname, int sage) {
+        super(fname, fage); // Call the Father's constructor
         this.Sname = sname;
         this.Sage = sage;
     }
 
-    // Method to display both Father and Son's details
-    void displayDetails() {
-        // Display father's details using Father's display method
-        super.display();
-        // Display son's details
+    // Method to display son's details along with father's details
+    void disp() {
+        display();  // Calling display method from Father class
         System.out.println("Son's name = " + Sname + ", Son's age = " + Sage);
     }
 }
 
-// Main class to run the program
 public class SingleInheritanceConstructor {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -57,10 +53,21 @@ public class SingleInheritanceConstructor {
         System.out.print("Enter age of son: ");
         int sage = sc.nextInt();
 
-        // Create Son object, which also initializes Father's details via inheritance
-        Son son = new Son(fname, fage, sname, sage);
+        // Create a Son object using constructor
+        Son sonA = new Son(fname, fage, sname, sage);
+        
+        // Display the details
+        sonA.disp();
 
-        // Display the details of both Father and Son
-        son.displayDetails();
+        sc.close();
     }
 }
+
+// OUTPUT
+
+// Enter name of father: Tom  
+// Enter age of father: 56 
+// Enter name of son: Jonny
+// Enter age of son: 45
+// Father's name = Tom, Father's age = 56
+// Son's name = Jonny, Son's age = 45
