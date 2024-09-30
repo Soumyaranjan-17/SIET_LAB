@@ -1,3 +1,5 @@
+// WAP to implement single inheritance on two classes, Father & Son
+
 import java.util.Scanner;
 
 class Father {
@@ -62,3 +64,12 @@ public class SingleInheritance {
         sc.close();
     }
 }
+
+// OUTPUT
+
+// Enter name of father: John
+// Enter age of father: 30
+// Enter name of son: Pika      
+// Enter age of son: 18
+// Father's name = John, Father's age = 30
+// Son's name = Pika, Son's age = 18
