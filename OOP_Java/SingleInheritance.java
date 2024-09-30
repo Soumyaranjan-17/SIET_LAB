@@ -58,5 +58,7 @@ public class SingleInheritance {
         // Set and display data
         son.get(fname, fage, sname, sage);
         son.disp();
+
+        sc.close();
     }
 }
