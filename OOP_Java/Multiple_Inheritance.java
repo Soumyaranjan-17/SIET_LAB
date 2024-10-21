@@ -35,7 +35,7 @@ class Square extends Shape{
         System.out.println("Area of Square is " + (side*side) + "Unit Square");
     }
 }
-public class Inheritance {
+public class Multiple_Inheritance {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         Rectangle r = new Rectangle();
