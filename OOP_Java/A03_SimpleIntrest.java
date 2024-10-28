@@ -1,6 +1,6 @@
 // import java.io.*;
 
-class Si
+class A03_SimpleIntrest
 {
 	public static void main(String A[]){
 	

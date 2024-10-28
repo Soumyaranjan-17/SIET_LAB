@@ -1,4 +1,4 @@
-class Volume
+class A06_Volume
 {
 	public static void main(String A[])
 	{	

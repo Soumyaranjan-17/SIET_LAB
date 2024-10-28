@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Number_Check{
+class A14_Number_Task{
     public void palindrome(int n){
         int m = n;
         int rev = 0;
@@ -61,7 +61,7 @@ class Number_Check{
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number to perform Operations: ");
         int n = sc.nextInt();
-        Number_Check N = new Number_Check();
+        A14_Number_Task N = new A14_Number_Task();
         N.palindrome(n);
         N.Is_Prime(n);
         N.Fibbo(n);

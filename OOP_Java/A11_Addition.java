@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Addition11{
+class A11_Addition{
     public static double Additions(double p, double q){
        return (p+q);
     }

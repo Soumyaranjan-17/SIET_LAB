@@ -1,14 +1,14 @@
-public class Complex {
+public class A15_Complex {
     int real, imag;
-    public Complex(){
+    public A15_Complex(){
         real = 1;
         imag = 2;
     }
-    public Complex(int r){
+    public A15_Complex(int r){
         real = r;
         imag = 3;
     }
-    public Complex(int r, int i){
+    public A15_Complex(int r, int i){
         real = r;
         imag = i;
     }
@@ -18,9 +18,9 @@ public class Complex {
     }
 
     public static void main(String[] args) {
-        Complex A = new Complex();
-        Complex B = new Complex(7);
-        Complex C = new Complex(7, 23);
+        A15_Complex A = new A15_Complex();
+        A15_Complex B = new A15_Complex(7);
+        A15_Complex C = new A15_Complex(7, 23);
 
         A.add();
         B.add();

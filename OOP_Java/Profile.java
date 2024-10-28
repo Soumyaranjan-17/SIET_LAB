@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-abstract class Profile {
+abstract class A17_Profile {
     String name;
     int roll, age, mark;
 
@@ -13,7 +13,7 @@ abstract class Profile {
     abstract void show_branch(); // Abstract method
 }
 
-class Medical extends Profile {
+class Medical extends A17_Profile {
     Medical(String n, int r, int a, int m) {
         this.name = n;
         this.roll = r;
@@ -26,7 +26,7 @@ class Medical extends Profile {
     }
 }
 
-class Engg extends Profile {
+class Engg extends A17_Profile {
     Engg(String n, int r, int a, int m) {
         this.name = n;
         this.roll = r;
@@ -39,7 +39,7 @@ class Engg extends Profile {
     }
 }
 
-class Agri extends Profile {
+class Agri extends A17_Profile {
     Agri(String n, int r, int a, int m) {
         this.name = n;
         this.roll = r;
@@ -68,7 +68,7 @@ class MultipleInheritancePt2 {
         System.out.println("Enter Mark");
         int mark = sc.nextInt();
 
-        Profile student;
+        A17_Profile student;
 
         // Determine the branch based on marks
         if (mark > 90) {

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Bank {
+class A13_Bank {
     String customerName;
     long accountNo;
     long balance = 0; // Initialize balance to 0
@@ -45,7 +45,7 @@ class Bank {
     }
 
     public static void main(String[] args) {
-        Bank obj = new Bank();
+        A13_Bank obj = new A13_Bank();
         obj.create();
         obj.deposit();
         obj.withdraw();

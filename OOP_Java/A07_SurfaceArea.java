@@ -1,6 +1,6 @@
 // import java.io.*;
 
-class SurfaceArea
+class A07_SurfaceArea
 {
 	public static void main(String A[])
 	{

@@ -1,6 +1,6 @@
 // import java.io.*;
 
-class Converter
+class A04_Converter
 {
 	public static void main(String A[]){
 		float c = 37;

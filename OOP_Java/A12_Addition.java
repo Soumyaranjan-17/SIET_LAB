@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Addition12{
+class A12_Addition{
     double a,b;
 
     void getData(){
@@ -22,7 +22,7 @@ class Addition12{
     }
 
     public static void main(String[] args) {
-        Addition12 obj= new Addition12();
+        A12_Addition obj= new A12_Addition();
         obj.getData();
         obj.display();
     }

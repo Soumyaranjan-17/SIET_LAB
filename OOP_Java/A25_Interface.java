@@ -1,3 +1,5 @@
+// WAP to create an interface "Rate" implement classes from it to the intrest of different bank
+
 import java.util.Scanner;
 
 // Define the Rate interface
@@ -7,7 +9,6 @@ interface Rate {
 
 // RBI class implementing Rate interface
 class RBI implements Rate {
-    @Override
     public float getInterestRate() {
         return 3.0f;
     }
@@ -15,7 +16,6 @@ class RBI implements Rate {
 
 // SBI class implementing Rate interface
 class SBI implements Rate {
-    @Override
     public float getInterestRate() {
         return 3.5f;
     }
@@ -23,13 +23,12 @@ class SBI implements Rate {
 
 // HDFC class implementing Rate interface
 class HDFC implements Rate {
-    @Override
     public float getInterestRate() {
         return 4.0f;
     }
 }
 
-public class Test {
+public class A25_Interface {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Bank Name (RBI/SBI/HDFC): ");
@@ -56,3 +55,6 @@ public class Test {
         sc.close();
     }
 }
+
+// Enter Bank Name (RBI/SBI/HDFC): HDFC 
+// Interest Rate of HDFC: 4.0%

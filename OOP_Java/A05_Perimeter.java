@@ -1,6 +1,6 @@
 // import java.io.*;
 
-class Perimeter
+class A05_Perimeter
 {
 	public static void main(String A[])
 	{

@@ -1,13 +1,11 @@
 
 class Addition{
-    public double Additions(double p, double q){
+    public static double Additions(double p, double q){
        return (p+q);
     }
 
     public static void main(String[] args) {
         Addition obj = new Addition();
-        double r = obj.Additions(3.5, 6.7);
-        System.out.println(r);
+        System.out.println(obj.Additions(5.3, 6.7));
     }
 }
-//10.2
