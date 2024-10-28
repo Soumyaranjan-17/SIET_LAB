@@ -1,7 +1,0 @@
-Person,Expense Description,Amount Paid,Date & Time,Total by Person,Settlement
-A,Bus,300.0,09/24/2024 10:58,300.0,200.0
-A,None,0,09/24/2024 10:57,300.0,200.0
-B,Auto,100.0,09/24/2024 10:58,100.0,0.0
-B,None,0,09/24/2024 10:57,100.0,0.0
-C,None,0,09/24/2024 10:57,0.0,-100.0
-D,None,0,09/24/2024 10:57,0.0,-100.0
