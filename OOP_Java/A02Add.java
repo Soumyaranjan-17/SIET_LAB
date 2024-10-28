@@ -1,6 +1,6 @@
 // import java.io.*;
 
-class Add
+class A02Add
 {
 	public static void main(String A[])
 	{
