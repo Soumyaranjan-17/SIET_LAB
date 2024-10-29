@@ -8,9 +8,8 @@ for i in range(n):
     branch = input("Branch: ")
     age = input("Age: ")
 
-    studentData.write("Name:"+ nm + '\n')
-    studentData.write("Branch:" +branch + '\n')
-    studentData.write("Age:" + age + '\n')
+    studentData.write('\n' + "Name:"+ nm + '\n' + "Branch:" +branch + '\n' + "Age:" + age)
+
 
 studentData.close()
 studentData = open("studentData.txt", "r")
