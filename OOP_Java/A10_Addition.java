@@ -1,6 +1,6 @@
 
 class Addition{
-    public static double Additions(double p, double q){
+    public double Additions(double p, double q){
        return (p+q);
     }
 
